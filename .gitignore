@@ -1,3 +1,4 @@
-models/__pycache__/store.cpython-39.pyc
-__pycache__/db.cpython-39.pyc
-resources/__pycache__/store.cpython-39.pyc
+__pycache__
+models/__pycache__
+resources/__pycache__
+data.db
