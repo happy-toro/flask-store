@@ -12,14 +12,14 @@
 + provide endpoints to list, retreive, create, update and delete items and store
 
 >	- GET `url/stores`
->	- GET `url/store/<<string:name>>`
->	- POST `url/store/<<string:name>>`
->	- DELETE `url/store/<<string:name>>`
+>	- GET `url/store/<string:name>`
+>	- POST `url/store/<string:name>`
+>	- DELETE `url/store/<string:name>`
 
 >	- GET `url/items`
->	- GET `url/item/<<string:name>>`
->	- POST `url/item/<<string:name>>`
->	- DELETE `url/item/<<string:name>>`
+>	- GET `url/item/<string:name>`
+>	- POST `url/item/<string:name>`
+>	- DELETE `url/item/<string:name>`
 
 
 + Each stores (id, name) contains list of items (id, name, price, store_id)
