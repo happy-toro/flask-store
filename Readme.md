@@ -10,6 +10,7 @@
 ## Description
 + provide endpoints to list, retreive, create, update and delete items and store
 
+'''
     + GET url/stores
     + GET url/store/<<string:name>>
     + POST url/store/<<string:name>>
@@ -19,6 +20,7 @@
     + GET url/item/<<string:name>>
     + POST url/item/<<string:name>>
     + DELETE url/item/<<string:name>>
+'''
 
 + Each stores (id, name) contains list of items (id, name, price, store_id)
 
@@ -27,4 +29,4 @@
 + The caller of the endpoints is required to authenticate via /auth endpoint whereby a JWT token will be assigned for subsequent calls to the rest of endpoints
 
 ## Implementation
-+ The endpoints are implemented using Python Flask micro framework and SQLLite
++ The endpoints are implemented using Python Flask micro framework and SQLite
