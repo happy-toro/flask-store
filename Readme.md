@@ -5,6 +5,13 @@
 pip install -r requirements.txt
 python3 app.py
 ```
+## Deployment
+
+The following files are required for Heroku deployment
+ 
+> - Profile
+> - runtime.txt
+> - uwsgi.ini
 
 ## Description
 + provide endpoints to list, retrieve, create, update and delete item and store
