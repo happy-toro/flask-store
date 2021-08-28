@@ -1,15 +1,15 @@
 # Flask Store Restful API
 
 ## Installation
-
-> - python 3.9
-> - Flask 2.0.1
-> - Flask-JWT 0.3.2
-> - Flask-RESTful 0.3.9
-> - Flask-SQLAlchemy 2.5.1
+```
+$ pip install Flask
+$ pip install Flask-JWT
+$ pip install Flask-RESTful
+$ pip install Flask-SQLAlchemy
+```
 
 ## Description
-+ provide endpoints to list, retreive, create, update and delete items and store
++ provide endpoints to list, retrieve, create, update and delete item and store
 
 >	- GET `url/stores`
 >	- GET `url/store/<string:name>`
@@ -22,9 +22,9 @@
 >	- DELETE `url/item/<string:name>`
 
 
-+ Each stores (id, name) contains list of items (id, name, price, store_id)
++ Each store (id, name) contains list of item (id, name, price, store_id)
 
-+ Also includes endpoints to register the users (id, username, password)
++ Also includes endpoints to register the user (id, username, password)
 
 + The caller of the endpoints is required to authenticate via /auth endpoint whereby a JWT token will be assigned for subsequent calls to the rest of endpoints
 
