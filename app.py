@@ -13,8 +13,12 @@ from security import authenticate, identity
 app = Flask(__name__)
 
 # create database
+# ATTENTION - due to Heroku env variable has not
+# update prefix 'postgres:' of the postgres URL, 
+# have to replace the prefix with 'postgresql:'   
 app.config['SQLALCHEMY_DATABASE_URI'] = \
-    os.environ.get('DATABASE_URL', 'sqlite:///data.db')
+    os.environ.get('DATABASE_URL', \
+        'sqlite:///data.db').replace('postgres:', 'postgresql:')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 @app.before_first_request
