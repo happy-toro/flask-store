@@ -1,0 +1,14 @@
+[Unit]
+Description=uWSGI Flask Store
+
+[Service]
+Environment=DATABASE_URL=<CONNECTION_STRING>
+ExecStart=/var/www/html/flask-store/venv/bin/uwsgi --emperor /var/www/html/flask-store/uwsgi.ini --uid sftan --gid sftan
+
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target
